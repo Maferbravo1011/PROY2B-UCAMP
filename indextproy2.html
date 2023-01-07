@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./stylessproy2.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav-left-section">
+                <li>
+                    <a href="">
+                        <img src="./Imagenes/Logo Tax.jpg" alt="">
+                    </a>
+                </li>
+                <h1>Cotización de paquetes</h1>
+            </ul>
+        </nav>
+    </header>
+
+    <form>
+        <label for="comp">Comprobantes</label>
+        <select name="comprobantes" id="comp">
+          <option value="selecciona">Selecciona un comprobante</option>
+          <option value="fact">Facturas</option>
+          <option value="nc">Notas de Credito</option>
+          <option value="nd">Notas de Debito</option>
+          <option value="cr">Comprobantes de Retención</option>
+          <option value="lc">Liquidaciones de Compara</option>
+          <option value="gr">Guías de Remisión</option>
+        </select>
+        <label for="per">Periodos</label>
+        <select name="periodos" id="per">
+          <option value="selecciona">Selecciona un periodo</option>
+          <option value="dia">Diario</option>
+          <option value="mes">Mensual</option>
+          <option value="trim">Trimestral</option>
+          <option value="sem">Semestral</option>
+          <option value="anual">Anual</option>
+        </select>
+        <label for="cantidadtext">Cantidad</label>
+        <select name="cantidad" id="cant">
+            <option value="selecciona">Selecciona la cantidad</option>
+            <option value="0-100">0-100</option>
+            <option value="101-200">101-200</option>
+            <option value="201-500">201-500</option>
+            <option value="501-1000">501-1000</option>
+            <option value="mas de 1000">Más de 1000</option>
+          </select>
+        <button id="boton" onclick="agregar()" >Agregar</button> 
+        <button id="boton" onclick="eliminar()" >Borrar</button> 
+  </form>
+    <div id ="lista">
+    </div>
+
+<script src="./java2.js"></script>
+</body>
+</html>

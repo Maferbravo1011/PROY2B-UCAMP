@@ -3,6 +3,8 @@ body{
     font-size: 22px;
     font-family: Arial, Helvetica, sans-serif;
     row-gap: 60px;
+    flex-wrap: wrap-reverse;
+    
 }
 a {
     text-decoration: none;
@@ -14,7 +16,8 @@ header{
 }
 /* header nav{
     display: flex;
-    justify-content: flex-end;    
+    justify-content: flex-end;
+  align-items: center      
 } */
 
 header nav .nav-left-section {
@@ -39,7 +42,8 @@ nav .nav-left-section a{
     font-size: 25px;
 }
 nav .nav-left-section button{
-    margin-right: 10px;
+    margin-left: auto;
+margin-right: auto;
     color: black;
     font-family: Arial, Helvetica, sans-serif;;
     font-size: 25px;
@@ -47,8 +51,9 @@ nav .nav-left-section button{
     border-color: white;
 }
 nav .nav-left-section img {
+    margin-left: auto;
+margin-right: auto;
     border-radius: 50px;
-    margin-left: 10px;
     width: 100px;
     height: 100px;
 }
@@ -93,6 +98,8 @@ main {
     row-gap: 30px;
     grid-row: 30px;
     display: grid;
+    position: center;
+    
 }
 main .main-logo{
     display: flex;
@@ -202,4 +209,7 @@ main .main-logo img{
     }
     footer .footer-right {
         position: center;
+    }
+    console.log {
+        font-family: Arial, Helvetica, sans-serif;
     }
