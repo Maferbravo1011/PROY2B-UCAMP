@@ -50,11 +50,16 @@
             <option value="501-1000">501-1000</option>
             <option value="mas de 1000">Más de 1000</option>
           </select>
+          <label for="costo">Costos</label>
+        <input id="calculadora" onclick="multiplicar()"> </input>
         <button id="boton" onclick="agregar()" >Agregar</button> 
         <button id="boton" onclick="eliminar()" >Borrar</button> 
   </form>
-    <div id ="lista">
-    </div>
+  <br>
+  <table>
+    <tbody id="table" onclick="table()">
+    </tbody>
+  </table>
 
 <script src="./java2.js"></script>
 </body>
